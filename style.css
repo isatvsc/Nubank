@@ -1,0 +1,612 @@
+:root {
+    --Nupurple: #8D0DE3;
+    --dark-Nupurple: #500781;
+    --Ultravioleta: #1E002F;
+    --Nuempresa: #714F8F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 65%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*        HEADER         */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: none;
+    white-space: nowrap;
+}
+
+.navbar img {
+    cursor: pointer;
+}
+
+.links {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    color: var(--dark-Nupurple);
+}
+
+.header-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.search {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.btn-empresa {
+    color: var(--Nupurple);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--Nupurple);
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+    line-height: 0;
+}
+
+.btn-empresa:hover {
+    background-color: #810ad12c;
+}
+
+.btn-cliente {
+    background-color: var(--Nupurple);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+    line-height: 0;
+}
+
+.btn-cliente:hover {
+    background-color: var(--dark-Nupurple);
+}
+
+
+
+/*        HERO         */
+
+.hero {
+    background-image: url("images/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.hero-text h1 {
+    margin: 0;
+}
+
+.box-cpfcard {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.box-cpfcard p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box-cpfcard #cpf-account {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.box-cpfcard #submit-cpf-account {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Nupurple);
+    width: 100%;
+    text-align: start;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box-cpfcard #submit-cpf-account:hover {
+    background-color: var(--dark-Nupurple);
+}
+
+
+
+
+/*        HOME 2         */
+
+
+
+
+.pt2 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.pt2-title {
+    width: 100%;
+    text-align: center;
+    color: var(--Nupurple);
+    margin: 50px 0;
+    line-height: 1;
+}
+
+.pt2-title h2 {
+    font-size: 4.5rem;
+}
+
+.tab-navigation {
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid var(--Nupurple);
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.tab-elements {
+    display: flex;
+    align-items: center;
+}
+
+.tab-elements button {
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.tab-elements button:hover {
+    background-color: rgba(104, 102, 102, 0.24);
+}
+
+.tab-elements button.active {
+    color: #fff;
+    background-color: var(--Nupurple);
+}
+
+.tab-elements #idUltravioleta.active {
+    background-color: var(--Ultravioleta);
+}
+
+.tab-elements #idEmpresas.active {
+    background-color: var(--Nuempresa);
+}
+
+.pt2-content {
+    width: 50%;
+    align-self: flex-start;
+    margin: 100px 0 100px;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pt2-content h3 {
+    color: var(--Nupurple);
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+/*ajustar o active, pois o que eu fiz foi deixar um conteudo pre carregado e ele não
+esta na mesma norma que os outros*/
+
+.pt2-content #home2paragrafo {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    line-height: 1.4;
+    color: black;
+}
+
+.pt2-content .paragrafo{
+    font-weight: 700;
+}
+.pt2-content .paragrafo.ultravioleta{
+    font-weight: 300;
+}
+
+.pt2-content #home2link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.pt2-content #home2link:hover {
+    color: var(--dark-Nupurple);
+    text-decoration: underline var(--dark-Nupurple);
+}
+
+.pt2-img {
+    width: 50%;
+    align-self: flex-end;
+    margin-top: -250px;
+}
+
+.pt2-img #home2imagem {
+    display: block;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+}
+
+.pt2-content .nubank{
+    color: var(--Nupurple);
+}
+.pt2-content .croma{
+    color: var(--Nupurple);
+}
+.pt2-content .ultravioleta{
+    color: var(--Ultravioleta);
+    font-weight: 400;
+}
+.pt2-content .empresas{
+    color: var(--Nuempresa);
+}
+
+
+/*        HOME 3         */
+
+
+.home3{
+    background-color: var(--Nupurple);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    
+}
+
+.home3 h2{
+    color: #fff;
+    font-size: 7rem;
+    text-align: center;
+    padding: 60px;
+    line-height: 1;
+}
+
+
+
+
+
+/*        HOME 4         */
+
+
+.home4 .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home4-content{
+    width: 400px;
+    margin: 200px 0px;
+}
+
+.home4-content h3{
+    color: var(--Ultravioleta);
+    font-size: 3rem;
+    line-height: 1.1;
+}
+.home4-content p{
+    font-size: 1rem;
+    margin-top: 80px;
+    line-height: 1.4;
+    color: var(--Ultravioleta);
+}
+
+.home4-content button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--Nupurple);
+    color: #fff;
+    font-weight: 500;
+}
+
+.home4-content button:hover{
+    background-color: var(--dark-Nupurple);
+}
+
+
+.home4cards img{
+    margin-top: 100px;
+    background-position: center;
+    height: 350px;
+    width: 400px;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.arrows img + img{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+/*        HOME 5         */
+
+
+.home5{
+    background-image: url(images/caixinha.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.home5 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home5 .tab-navigation{
+    margin-top: 30px;
+}
+
+.home5 .textbox{
+    position: relative;
+    top: 200px;
+    left: 400px;
+    background-color: #fff;
+    padding: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.home5 .textbox h4{
+    color: var(--Nupurple);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.home5 .textbox a{
+    display: inline-block;
+    color: var(--Nupurple);
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.home5 .textbox a:hover{
+    color: var(--dark-Nupurple);
+    text-decoration: underline var(--dark-Nupurple);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*        MEDIA         */
+
+@media (max-width: 900px) {
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .links {
+        font-size: 9px;
+    }
+
+    .header-btns {
+        gap: 5px;
+    }
+
+    .btn-empresa,
+    .btn-cliente {
+        width: 100px;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .pt2-content {
+        width: 45%;
+    }
+
+    .pt2-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: auto;
+        min-height: 50px;
+    }
+
+    header .container {
+        padding: 8px 0;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-btns {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        font-size: 1.4rem;
+    }
+
+    .box-cpfcard {
+        position: static;
+        width: 250px;
+        align-self: center;
+    }
+
+    .pt2-title h2 {
+        font-size: 2rem;
+    }
+
+    .tab-navigation {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .tab-elements {
+        width: max-content;
+    }
+
+    .pt2-content {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .pt2-content #titulo {
+        font-size: 2rem;
+    }
+
+    .pt2-img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .pt2-img .imagem {
+        margin: 0 auto;
+        width: 300px;
+        height: 380px;
+    }
+}
+
+
+
+
+
+footer {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
