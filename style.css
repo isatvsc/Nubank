@@ -3,6 +3,7 @@
     --dark-Nupurple: #500781;
     --Ultravioleta: #1E002F;
     --Nuempresa: #714F8F;
+    --Nuwhite: #fff0ff;
 }
 
 * {
@@ -10,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    transition-duration: 0.2ms;
 }
 
 html {
@@ -34,7 +36,7 @@ header {
     left: 0;
     height: 40px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--Nuwhite);
     z-index: 99;
 }
 
@@ -104,7 +106,7 @@ header .container {
 
 .btn-cliente {
     background-color: var(--Nupurple);
-    color: #fff;
+    color: var(--Nuwhite);
     cursor: pointer;
     border: none;
     padding: 10px;
@@ -143,7 +145,7 @@ header .container {
 }
 
 .hero-text {
-    color: #fff;
+    color: var(--Nuwhite);
     font-size: 1.8rem;
     line-height: 1;
 }
@@ -184,7 +186,7 @@ header .container {
     background-color: var(--Nupurple);
     width: 100%;
     text-align: start;
-    color: #fff;
+    color: var(--Nuwhite);
     cursor: pointer;
 }
 
@@ -221,7 +223,7 @@ header .container {
 
 .tab-navigation {
     width: fit-content;
-    background-color: #fff;
+    background-color: var(--Nuwhite);
     border: 1px solid var(--Nupurple);
     padding: 5px;
     border-radius: 40px;
@@ -239,7 +241,7 @@ header .container {
     font-weight: 600;
     padding: 10px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--Nuwhite);
     white-space: nowrap;
 }
 
@@ -248,7 +250,7 @@ header .container {
 }
 
 .tab-elements button.active {
-    color: #fff;
+    color: var(--Nuwhite);
     background-color: var(--Nupurple);
 }
 
@@ -346,7 +348,7 @@ esta na mesma norma que os outros*/
 }
 
 .home3 h2{
-    color: #fff;
+    color: var(--Nuwhite);
     font-size: 7rem;
     text-align: center;
     padding: 60px;
@@ -390,7 +392,7 @@ esta na mesma norma que os outros*/
     cursor: pointer;
     border: none;
     background-color: var(--Nupurple);
-    color: #fff;
+    color: var(--Nuwhite);
     font-weight: 500;
 }
 
@@ -446,7 +448,7 @@ esta na mesma norma que os outros*/
     position: relative;
     top: 200px;
     left: 400px;
-    background-color: #fff;
+    background-color: var(--Nuwhite);
     padding: 40px;
     width: 300px;
     border-radius: 20px;
@@ -474,13 +476,107 @@ esta na mesma norma que os outros*/
 
 
 
+/*        BLOG DO NU         */
+
+.blogdoNu{
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+}
+
+
+.blogdoNu .blogtext{
+    margin-left: 250px;
+    width: 250px;
+}
+
+.blogdoNu .blogtext h3{
+    color: var(--Ultravioleta);
+    font-size: 3.2rem;
+    line-height: 0.9;
+}
+
+.blogdoNu .blogtext button{
+    border: none;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--Nupurple);
+    color: var(--Nuwhite);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blogdoNu .blogtext button:hover{
+    background-color: var(--dark-Nupurple);
+}
 
 
 
+.blogdoNu .owl-carousel{
+    margin-left: 100px;
+}
+
+.blogdoNu .owl-carousel .boxnews{
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
+.blogdoNu .owl-carousel .boxnews img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    display: block;
+}
 
 
+.boxnews .news-text{
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: var(--Nuwhite);
+}
+
+.boxnews .news-text span{
+    display: inline-block;
+    color: var(--Nuwhite);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.boxnews .news-text h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.boxnews .news-text a{
+    color: var(--Nuwhite);
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-decoration: none;
+    border: 0.1px solid var(--Nuwhite);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.owl-nav button {
+    margin: 0 5px;
+    position: relative;
+    top: 50px;
+    background-color: var(--Nupurple) !important;
+    color: var(--Nuwhite) !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.owl-nav button:hover{
+    background-color: var(--dark-Nupurple) !important;
+}
 
 
 
