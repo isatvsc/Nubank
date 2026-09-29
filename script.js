@@ -129,6 +129,90 @@ function home4CardSelector(){
     
 }
 
+function home5CardSelector(){
+    const caixinha = {
+        identificador:"caixinha",
+        texto: "Guarde dinheiro de maneira organizada de acordo com seus objetivos.",
+        imagem: `.home5{
+            background-image: url(images/home5/caixinha.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }`
+    }
+
+    const contaNubank = {
+        identificador:"contaNubank",
+        texto: "Pague, receba e transfira na hora, de qualquer lugar.",
+        imagem: `.home5{
+            background-image: url(images/home5/conta-do-nubank.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }`
+    }
+
+    const emprestimos = {
+        identificador:"emprestimos",
+        texto: "Consiga ajuda financeira para resolver uma emergência ou realizar um sonho." ,
+        imagem: `.home5{
+            background-image: url(images/home5/emprestimos.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }`
+    }
+
+    const maisInfo = {
+        identificador:"maisInfo",
+        texto: "Diferentes soluções para o seu dia-a-dia." ,
+        imagem: `.home5{
+            background-image: url(images/home5/conta.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }`
+    }
+
+    const conteudos = [
+        caixinha,
+        contaNubank,
+        emprestimos,
+        maisInfo
+    ]
+
+    const tabs = document.querySelectorAll(".tab-info")
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(tab => {
+                tab.classList.remove("active");
+            });
+
+            tab.classList.add("active");
+
+            const identificador = tab.dataset.tab;
+
+            const home5Info = conteudos.find(objeto => {
+                return objeto.identificador === identificador;
+            });
+
+            document.getElementById("home5Texto").innerHTML = home5Info.texto;
+            document.getElementById("home5Image").innerHTML = home5Info.imagem;
+            
+
+        });
+
+    });
+}
+
+home5CardSelector();
 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -138,7 +222,7 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout:7000,
     responsive:{
         0:{
-            items:2
+            items:3
         },
         600:{
             items:3

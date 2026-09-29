@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    width: 65%;
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -248,6 +248,7 @@ header .container {
     white-space: nowrap;
 }
 
+
 .tab-elements button:hover {
     background-color: rgba(104, 102, 102, 0.24);
 }
@@ -266,7 +267,7 @@ header .container {
 }
 
 .pt2-content {
-    width: 50%;
+    width: 80%;
     align-self: flex-start;
     margin: 100px 0 100px;  
     display: flex;
@@ -284,7 +285,7 @@ header .container {
 esta na mesma norma que os outros*/
 
 .pt2-content #home2paragrafo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 20px;
     line-height: 1.4;
     color: black;
@@ -313,12 +314,12 @@ esta na mesma norma que os outros*/
 .pt2-img {
     width: 50%;
     align-self: flex-end;
-    margin-top: -250px;
+    margin-top: -300px;
 }
 
 .pt2-img #home2imagem {
     display: block;
-    width: 350px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
     object-position: center;
@@ -433,14 +434,10 @@ esta na mesma norma que os outros*/
 
 /*        HOME 5         */
 
-
 .home5{
-    background-image: url(images/home5/caixinha.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
+    transition-duration: 1s;
 }
+
 
 .home5 .container{
     display: flex;
@@ -454,7 +451,7 @@ esta na mesma norma que os outros*/
 
 .home5 .textbox{
     position: relative;
-    top: 200px;
+    top: 150px;
     left: 400px;
     background-color: var(--Nuwhite);
     padding: 40px;
@@ -696,19 +693,19 @@ esta na mesma norma que os outros*/
     background-color: #e2f0b0;
     padding: 40px 0;
     overflow: hidden;
-    margin: 40px 0;
+    padding-top: 60px;
 }
 
 .letreiro .faixa {
     overflow: hidden;
-    margin: 10px 0;
+    margin: -10px 0;
     padding: 10px;
 }
 
 .letreiro .trilho {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     width: max-content;
 }
 
@@ -725,7 +722,6 @@ esta na mesma norma que os outros*/
     width: 100px;
     object-position: center;
     object-fit: cover;
-    border-radius: 6px;
 }
 
 .letreiro .trilho {
@@ -737,7 +733,7 @@ esta na mesma norma que os outros*/
 }
 
 .letreiro .faixa.lenta .trilho{
-    animation: andar-esquerda-lento 60s linear infinite;
+    animation: andar-esquerda-lento 65s linear infinite;
 }
 
 @keyframes andar-esquerda {
@@ -761,22 +757,103 @@ esta na mesma norma que os outros*/
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 60px;
 }
 
 .letreiro .container h3{
     color: var(--Nupurple);
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .letreiro .container a{
-    padding: 15px 30px;
+    padding: 10px 20px;
     background-color: var(--Nupurple);
     color: var(--Nuwhite);
     text-decoration: none;
     border-radius: 30px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
 }
+
+
+
+
+
+/*         FOOTER            */
+
+
+
+
+
+footer{
+    background-color: var(--Ultravioleta);
+    color: var(--Nuwhite);
+}
+
+footer .topo{
+    font-size: 2.5rem;
+    padding-top: 60px;
+    text-wrap: pretty;
+}
+
+footer .content{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) ;
+    padding-top: 60px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+footer .lista{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .categorias{
+    color: #fff0ff8c;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+footer a{
+    color: var(--Nuwhite);
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer span{
+    padding: 10px 0;
+    color: var(--Nuwhite);
+    font-weight: 300;
+}
+
+footer .socialmedia{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+
+}
+
+footer .rodape{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
 
 /*        MEDIA         */
 
@@ -897,9 +974,4 @@ esta na mesma norma que os outros*/
 
 
 
-footer {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 900px;
-    width: 100%;
-}
+
