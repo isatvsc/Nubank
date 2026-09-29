@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nubank</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +13,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+
 </head>
 <body>
     
-
+    <!--  HEADER   -->
 
     <header>
         <div class="container">
@@ -46,7 +49,7 @@
         </div>
     </header>
 
-
+    <!--  HERO   -->
 
     <section class="hero">
         <div class="container">
@@ -75,7 +78,7 @@
         
     </section>
 
-
+    <!--  HOME 2   -->
 
    <section class="pt2">
     <div class="container">
@@ -99,12 +102,14 @@
     </div>
 
     <div class="pt2-img">
-        <img id="home2imagem" src="images/tabNavigation-1.jpg">
+        <img id="home2imagem" src="images/tab-navigation/tabNavigation-1.jpg">
     </div>
 
     </div>
    </section>
 
+
+   <!--  HOME 3   -->
 
    <section class="home3">
 
@@ -114,6 +119,8 @@
 
    </section>
 
+
+  <!--  HOME 4   -->
 
    <section class="home4">
     <div class="container">
@@ -125,10 +132,17 @@
             <button id="home4btn">Conheça o Cartão Nubank</button>
 
         </div>
+        <!--
+        <div class="splide__track">
+		<div class="splide__list">
+			<div class="splide__slide"><img src="images/cardNubank.png"></div>
+			<div class="splide__slide"><img src="images/cardCroma.png" ></div>
+			<div class="splide__slide"><img src="images/cardUltravioleta.png" ></div>
+            <div class="splide_slide"><img src="images/cardEmpresa.png" ></div>
+		</div>
+        </div> -->
 
-        <div class="home4cards">
-            <img src="images/cardNubank.png">
-        </div>
+        
 
 
         <div class="arrows">
@@ -139,6 +153,12 @@
     </div>
 
    </section>
+
+
+
+   <!--  HOME 5   -->
+
+
 
    <section class="home5">
     <div class="container">
@@ -159,6 +179,9 @@
 
     </div>
    </section>
+
+
+   <!--  BLOG DO NU   -->
 
 
 
@@ -242,8 +265,145 @@
     
    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+
+   <!--  HOME 6   -->
+
+    <section class="home6">
+        <div class="container">
+            <div class="topo">
+            <div class="content">
+                <h3>Segurança é prioridade</h3>
+                <p>Estamos aqui para te dar suporte completo e garantir a proteção do seu dinheiro.</p>
+                <a href="#">Conheça nossas soluções</a>
+            </div>
+
+            <div class="lock">
+                <img src="images/cadeado.png" alt="cadeado">
+                
+            </div>    
+
+            </div>
+
+            <div class="cards">
+                <a href="#">
+                <div class="card">
+                    <h4>Me roubaram</h4>
+                    <button> ➝ </button>
+                </div>
+                </a>
+                
+                <a href="#">
+                <div class="card">
+                    <h4>Canal de Denúncias</h4>
+                    <button> ➝ </button>
+                </div>
+                </a>
+
+                <a href="#">
+                <div class="card">
+                    <h4>Central de Proteção</h4>
+                    <button> ➝ </button>
+                </div>
+                </a>
+
+                <a href="#">
+                <div class="card">
+                    <h4>Canais de Atendimento</h4>
+                    <button> ➝ </button>  
+                </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="letreiro">
+        <div class="faixa">
+            <div class="trilho">
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                </div>
+
+            
+        </div>
+
+        <div class="faixa inversa">
+            <div class="trilho">
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                </div>
+        </div>
+
+        <div class="faixa lenta">
+            <div class="trilho">
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                <img src="images/letreiro/homem-carregando-prancha.jpg">
+                <span>Junte-se aos</span>
+                <img src="images/letreiro/foto-still-nubank.jpg">
+                <span>130 milhões</span>
+                <img src="images/letreiro/familia-tirando-selfie.jpg">
+                <span>que já escolheram</span>
+                <img src="images/letreiro/mulher-yoga.jpg">
+                <span>o Nu.</span>
+                </div>
+        </div>
+
+        <div class="container">
+            <h3>Peça seu Cartão de Crédito e sua Conta da Nubank</h3>
+            <a href="#">Quero ser Nubank</a>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    
+
+    
+ <script src="script.js" defer></script>
 </body>
 </html>

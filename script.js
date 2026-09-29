@@ -1,10 +1,11 @@
+
 function home2TabNavigation() {
 
     const Nubank = {
         identificador: "nubank",
         titulo: "Nubank",
         paragrafo: "Controle total da sua vida financeira",
-        imagem: "images/tabNavigation-1.jpg",
+        imagem: "images/tab-navigation/tabNavigation-1.jpg",
         link: "#nubank",
         textoLink: "Conheça Nubank"
     };
@@ -13,7 +14,7 @@ function home2TabNavigation() {
         identificador: "croma",
         titulo: "Nubank Croma",
         paragrafo: "A experiência que valoriza sua evolução financeira",
-        imagem: "images/tabNavigation-2.jpg",
+        imagem: "images/tab-navigation/tabNavigation-2.jpg",
         link: "#nubank",
         textoLink: "Conheça Nubank Croma"
     };
@@ -22,7 +23,7 @@ function home2TabNavigation() {
         identificador: "ultravioleta",
         titulo: "Nubank Ultravioleta",
         paragrafo: "O melhor cartão pra quem ama viajar",
-        imagem: "images/tabNavigation-3.jpg",
+        imagem: "images/tab-navigation/tabNavigation-3.jpg",
         link: "#nubank",
         textoLink: "Conheça Nubank Ultravioleta"
     };
@@ -31,7 +32,7 @@ function home2TabNavigation() {
         identificador: "empresas",
         titulo: "Nu Empresas",
         paragrafo: "Tudo para gerir seu negócio com facilidade",
-        imagem: "images/tabNavigation-4.jpg",
+        imagem: "images/tab-navigation/tabNavigation-4.jpg",
         link: "#nubank",
         textoLink: "Conheça Nu Empresas"
     };
@@ -118,7 +119,7 @@ function home4CardSelector(){
         imagem : "images/cardEmpresa.png"
     }
 
-    conteudos = [
+    const conteudos = [
         Nubank,
         Croma,
         Ultravioleta,
@@ -140,7 +141,7 @@ $('.owl-carousel').owlCarousel({
             items:2
         },
         600:{
-            items:2
+            items:3
         },
         1000:{
             items:3
